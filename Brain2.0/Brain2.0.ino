@@ -87,7 +87,7 @@ void loop() {
   if(iniciar == 1){
   Serial.print("Você selecionou a Dificuldade ");
   Serial.println(estado);
-  Serial.println("Aperte o Botão 4 para iniciar no nível desejado");
+  Serial.println("Aperte o Botão 4 para iniciar com a dificuldade escolhida");
   iniciar = 2;
   delay(400);
   }
