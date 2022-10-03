@@ -5,13 +5,9 @@ int const ama = A3;
 int const bot1 = 2;
 int const bot2 = 3;
 int const bot3 = 4;
+int const bot4 = 12;
 
-//Cuidado, troquei a pinagem de 12 para A2,
-//para ficar esteticamente melhor
-int const bot4 = A2;
-
-// ↓↓↓ Para caso queira imprimir num display 7seg
-/*int const d1 = A1;
+int const d1 = A1;
 int const d2 = A2;
 
 int const a = 5;
@@ -20,7 +16,7 @@ int const c = 7;
 int const d = 8;
 int const e = 9;
 int const f = 10;
-int const g = 11;*/
+int const g = 11;
 
 int dif[4] = {1000,500,400};
 int aux = 1;
@@ -80,7 +76,7 @@ void loop() {
       estado = 1;
     }
     
-    //Serial.println(estado);
+    Serial.println(estado);
   }
   else if(digitalRead(bot1) && estado > 0){
     iniciar = 1;
@@ -91,7 +87,7 @@ void loop() {
   if(iniciar == 1){
   Serial.print("Você selecionou a Dificuldade ");
   Serial.println(estado);
-  Serial.println("Aperte o Botão 4 para iniciar com a dificuldade escolhida");
+  Serial.println("Aperte o Botão 4 para iniciar no nível desejado");
   iniciar = 2;
   delay(400);
   }
